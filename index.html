@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> <!-- basic webpage start -->
 <!--
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
+	<head> <!-- head and body elements. Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.-->
 		<title>InêsCSilva</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -35,7 +35,7 @@
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a target="_blank" href="https://github.com/inescsilva" class="icon brands fa-github"><span class="label">Github</span></a></li> 
 						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
@@ -87,10 +87,10 @@ I am pursuing a professional career in information technologies because it requi
 									<p>Some projects I made while studying GIS</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="https://ulisboa.maps.arcgis.com/apps/webappviewer/index.html?id=699d07e5d9a442998cfca0d3c38ca0b5"> class="image"><img src="images/pic01.jpg" alt="my app overview image" /></a> 
 											<div class="inner">
 												<h4>FCUL Campus Map App</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<p>An app featuring the Faculty of Sciences of University of Lisbon campus. Built with Web AppBuilder for ArcGIS for the Master degree in GIS, subject of Location Services and Geoinformation.</p>
 											</div>
 										</article>
 										<article>
@@ -136,17 +136,18 @@ I am pursuing a professional career in information technologies because it requi
 
 						<!-- Five -->
 							<section id="five">
-								<div class="container">
+								<div class="container"> <!-- div element, also known as a division element, is a general purpose container for other elements.-->
 									<h3>Contact Me</h3>
 									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
+									<form method="post" action="https://inescsilva.github.io/submit-message"> <!-- web forms that actually submit data to a server through action-->
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required/></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" required/></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6" required></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
+													<li><button type="submit">Send Message</button></li>
 													<li><input type="submit" class="primary" value="Send Message" /></li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
